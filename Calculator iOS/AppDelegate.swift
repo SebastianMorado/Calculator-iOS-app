@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Calculator Layout iOS13
+//  Calculator
 //
-//  Created by Angela Yu on 01/07/2019.
-//  Copyright © 2019 The App Brewery. All rights reserved.
+//  Created by Sebastian Morado on 05/25/21
+//  Copyright © 2021. All rights reserved.
 //
 
 import UIKit

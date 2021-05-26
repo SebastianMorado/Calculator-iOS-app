@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		644D3669265E160700391F8F /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644D3668265E160700391F8F /* CalculatorLogic.swift */; };
 		AD0C513722CA22D500AADC4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0C513622CA22D500AADC4D /* AppDelegate.swift */; };
 		AD0C513922CA22D500AADC4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0C513822CA22D500AADC4D /* SceneDelegate.swift */; };
 		AD0C513B22CA22D500AADC4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0C513A22CA22D500AADC4D /* ViewController.swift */; };
@@ -17,7 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD0C513322CA22D500AADC4D /* Calculator Layout iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator Layout iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		644D3668265E160700391F8F /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
+		AD0C513322CA22D500AADC4D /* Calculator iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0C513622CA22D500AADC4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD0C513822CA22D500AADC4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AD0C513A22CA22D500AADC4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,11 +41,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		644D3665265E15E300391F8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				644D3668265E160700391F8F /* CalculatorLogic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		644D3666265E15E900391F8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD0C515822CA248600AADC4D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		644D3667265E15F200391F8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD0C513A22CA22D500AADC4D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		AD0C512A22CA22D500AADC4D = {
 			isa = PBXGroup;
 			children = (
 				AD0C515A22CA2A7B00AADC4D /* README.md */,
-				AD0C513522CA22D500AADC4D /* Calculator Layout iOS13 */,
+				AD0C513522CA22D500AADC4D /* Calculator iOS */,
 				AD0C513422CA22D500AADC4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,31 +77,32 @@
 		AD0C513422CA22D500AADC4D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD0C513322CA22D500AADC4D /* Calculator Layout iOS13.app */,
+				AD0C513322CA22D500AADC4D /* Calculator iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD0C513522CA22D500AADC4D /* Calculator Layout iOS13 */ = {
+		AD0C513522CA22D500AADC4D /* Calculator iOS */ = {
 			isa = PBXGroup;
 			children = (
+				644D3665265E15E300391F8F /* Model */,
+				644D3666265E15E900391F8F /* View */,
+				644D3667265E15F200391F8F /* Controller */,
 				AD0C513622CA22D500AADC4D /* AppDelegate.swift */,
 				AD0C513822CA22D500AADC4D /* SceneDelegate.swift */,
-				AD0C513A22CA22D500AADC4D /* ViewController.swift */,
-				AD0C515822CA248600AADC4D /* Main.storyboard */,
 				AD0C513F22CA22D800AADC4D /* Assets.xcassets */,
 				AD0C514122CA22D800AADC4D /* LaunchScreen.storyboard */,
 				AD0C514422CA22D800AADC4D /* Info.plist */,
 			);
-			path = "Calculator Layout iOS13";
+			path = "Calculator iOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD0C513222CA22D500AADC4D /* Calculator Layout iOS13 */ = {
+		AD0C513222CA22D500AADC4D /* Calculator iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD0C514722CA22D800AADC4D /* Build configuration list for PBXNativeTarget "Calculator Layout iOS13" */;
+			buildConfigurationList = AD0C514722CA22D800AADC4D /* Build configuration list for PBXNativeTarget "Calculator iOS" */;
 			buildPhases = (
 				AD0C512F22CA22D500AADC4D /* Sources */,
 				AD0C513022CA22D500AADC4D /* Frameworks */,
@@ -85,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = "Calculator Layout iOS13";
+			name = "Calculator iOS";
 			productName = "Calculator Layout iOS13";
-			productReference = AD0C513322CA22D500AADC4D /* Calculator Layout iOS13.app */;
+			productReference = AD0C513322CA22D500AADC4D /* Calculator iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AD0C512E22CA22D500AADC4D /* Build configuration list for PBXProject "Calculator Layout iOS13" */;
+			buildConfigurationList = AD0C512E22CA22D500AADC4D /* Build configuration list for PBXProject "Calculator iOS" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD0C513222CA22D500AADC4D /* Calculator Layout iOS13 */,
+				AD0C513222CA22D500AADC4D /* Calculator iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				644D3669265E160700391F8F /* CalculatorLogic.swift in Sources */,
 				AD0C513B22CA22D500AADC4D /* ViewController.swift in Sources */,
 				AD0C513722CA22D500AADC4D /* AppDelegate.swift in Sources */,
 				AD0C513922CA22D500AADC4D /* SceneDelegate.swift in Sources */,
@@ -284,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 453J5S23QT;
-				INFOPLIST_FILE = "Calculator Layout iOS13/Info.plist";
+				INFOPLIST_FILE = "Calculator iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 453J5S23QT;
-				INFOPLIST_FILE = "Calculator Layout iOS13/Info.plist";
+				INFOPLIST_FILE = "Calculator iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD0C512E22CA22D500AADC4D /* Build configuration list for PBXProject "Calculator Layout iOS13" */ = {
+		AD0C512E22CA22D500AADC4D /* Build configuration list for PBXProject "Calculator iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD0C514522CA22D800AADC4D /* Debug */,
@@ -326,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD0C514722CA22D800AADC4D /* Build configuration list for PBXNativeTarget "Calculator Layout iOS13" */ = {
+		AD0C514722CA22D800AADC4D /* Build configuration list for PBXNativeTarget "Calculator iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD0C514822CA22D800AADC4D /* Debug */,
